@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reprajser.veridok.ru/sitemap.xml
