@@ -8,6 +8,10 @@
 <meta name="description" content="Для продавцов на Wildberries и Ozon: цена каждой карточки подстраивается под конкурентов по вашим правилам и никогда не падает ниже вашей минимальной.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Цена в рынке</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Цена в рынке</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Цены ваших карточек на Wildberries и Ozon меняются сами — по конкурентам и вашим правилам, но не ниже минимума</h1>
-    <p class="sub">Для продавцов с десятками и сотнями карточек: вы задаёте для каждого товара минимальную цену и правило — быть на шаг дешевле, держаться рядом с лидером или не участвовать в гонке, — а сервис следит за конкурентами и меняет цены через кабинет площадки.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для продавцов с десятками и сотнями карточек</p>
+      <h1 class="rise" style="--i:1" data-len="xlong">Цены ваших карточек на Wildberries и Ozon меняются сами&nbsp;<span class="soft">— по конкурентам и вашим правилам, но не ниже минимума</span></h1>
+      <p class="rise" style="--i:2">Для продавцов с десятками и сотнями карточек: вы задаёте для каждого товара минимальную цену и правило — быть на шаг дешевле, держаться рядом с лидером или не участвовать в гонке, — а сервис следит за конкурентами и меняет цены через кабинет площадки.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="160" font-size="40" font-weight="600" fill="#0a1524">Цены</text><line x1="130" y1="210" x2="1070" y2="210" stroke="#dde2ea" stroke-width="3" fill="none" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="292" font-size="32" font-weight="600" fill="#0a1524">Конкуренты</text><rect x="130" y="360" width="44" height="44" rx="8" fill="#12397a" /><text x="200" y="392" font-size="32" font-weight="600" fill="#0a1524">Правила</text><rect x="130" y="460" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="470" width="320" height="24" rx="12" fill="#dde2ea" /><rect x="130" y="560" width="44" height="44" rx="8" fill="#dde2ea" /><rect x="200" y="570" width="240" height="24" rx="12" fill="#b9c3d2" /><rect x="700" y="260" width="370" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="330" font-size="34" font-weight="600" fill="#0a1524">История</text><rect x="740" y="420" width="52" height="190" rx="8" fill="#ffffff" /><rect x="820" y="500" width="52" height="110" rx="8" fill="#ffffff" /><rect x="900" y="380" width="52" height="230" rx="8" fill="#12397a" /><rect x="980" y="460" width="52" height="150" rx="8" fill="#b9c3d2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Продавцов с десятками</dd></div>
+      <div><dt>Сервис</dt><dd>Меняет цены через кабинет</dd></div>
+      <div><dt>Как</dt><dd>По вашим правилам</dd></div>
+      <div><dt>Доступ</dt><dd>Сервис в подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Конкуренты по карточке</b><span>Кого считать соперником для каждого товара.</span><br><a class="btn" href="price.html" data-ev="feature_konkurenty">Мне это нужно</a></div>
-      <div class="card"><b>Правила цены</b><span>На шаг дешевле, вровень с лидером или своя наценка.</span><br><a class="btn" href="price.html" data-ev="feature_pravila">Мне это нужно</a></div>
-      <div class="card"><b>Минимальная цена</b><span>Ниже себестоимости и вашей границы цена не опустится.</span><br><a class="btn" href="price.html" data-ev="feature_minimum">Мне это нужно</a></div>
-      <div class="card"><b>История цен</b><span>Когда и почему менялась цена, и что стало с продажами.</span><br><a class="btn" href="price.html" data-ev="feature_istoriya">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="110" width="270" height="380" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="96" y="180" font-size="30" font-weight="600" fill="#0a1524">Конкуренты</text><rect x="96" y="230" width="190" height="22" rx="8" fill="#dde2ea" /><rect x="96" y="290" width="150" height="22" rx="8" fill="#b9c3d2" /><rect x="96" y="350" width="210" height="22" rx="8" fill="#dde2ea" /><rect x="460" y="110" width="270" height="380" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="486" y="230" width="170" height="22" rx="8" fill="#dde2ea" /><rect x="486" y="290" width="210" height="22" rx="8" fill="#12397a" /><rect x="486" y="350" width="130" height="22" rx="8" fill="#b9c3d2" /><line x1="340" y1="241" x2="460" y2="241" stroke="#b9c3d2" stroke-width="3" fill="none" /><line x1="340" y1="301" x2="460" y2="301" stroke="#12397a" stroke-width="3" fill="none" /><line x1="340" y1="361" x2="460" y2="361" stroke="#b9c3d2" stroke-width="3" fill="none" /></svg></div>
+        <h3>Конкуренты по карточке</h3><p>Кого считать соперником для каждого товара.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_konkurenty">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" font-weight="600" fill="#0a1524">Правила цены</text><rect x="120" y="210" width="400" height="70" rx="28" fill="#12397a" /><rect x="120" y="310" width="460" height="70" rx="28" fill="#dfe8f7" /><rect x="120" y="410" width="300" height="70" rx="28" fill="#dde2ea" /></svg></div>
+        <h3>Правила цены</h3><p>На шаг дешевле, вровень с лидером или своя наценка.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_pravila">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" font-weight="600" fill="#0a1524">Минимальная цена</text><line x1="150" y1="470" x2="660" y2="470" stroke="#12397a" stroke-width="6" fill="none" /><rect x="190" y="300" width="70" height="170" rx="8" fill="#dfe8f7" /><rect x="310" y="360" width="70" height="110" rx="8" fill="#dde2ea" /><rect x="430" y="250" width="70" height="220" rx="8" fill="#b9c3d2" /><rect x="550" y="390" width="70" height="80" rx="8" fill="#12397a" /></svg></div>
+        <h3>Минимальная цена</h3><p>Ниже себестоимости и вашей границы цена не опустится.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_minimum">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" font-weight="600" fill="#0a1524">История цен</text><rect x="130" y="220" width="48" height="48" rx="8" fill="#dfe8f7" /><polyline points="140,244 152,258 168,226" fill="none" stroke="#12397a" stroke-width="4" /><rect x="200" y="232" width="340" height="24" rx="8" fill="#dde2ea" /><rect x="130" y="310" width="48" height="48" rx="8" fill="#dfe8f7" /><polyline points="140,334 152,348 168,316" fill="none" stroke="#12397a" stroke-width="4" /><rect x="200" y="322" width="260" height="24" rx="8" fill="#b9c3d2" /><rect x="130" y="400" width="48" height="48" rx="8" fill="#dde2ea" /><rect x="200" y="412" width="380" height="24" rx="8" fill="#dde2ea" /></svg></div>
+        <h3>История цен</h3><p>Когда и почему менялась цена, и что стало с продажами.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_istoriya">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Продавец чехлов для телефонов, 340 карточек на Wildberries и 210 на Ozon. Для ходовых моделей правило — на шаг дешевле самого дешёвого из пяти выбранных конкурентов, но не ниже заданного минимума. Ночью двое конкурентов снижают цены, и к утру сервис опускает 18 карточек; одна упирается в минимум и остаётся на нём, о чём приходит уведомление.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Продавец чехлов для телефонов, 340 карточек на Wildberries и 210 на Ozon. Для ходовых моделей правило — на шаг дешевле самого дешёвого из пяти выбранных конкурентов, но не ниже заданного минимума. Ночью двое конкурентов снижают цены, и к утру сервис опускает 18 карточек; одна упирается в минимум и остаётся на нём, о чём приходит уведомление.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="160" x2="960" y2="160" stroke="#dde2ea" stroke-width="6" fill="none" /><circle cx="240" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="160" r="22" fill="#ffffff" stroke="#b9c3d2" stroke-width="6" /><circle cx="960" cy="160" r="22" fill="#12397a" /><text x="240" y="240" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">Ночью</text><text x="600" y="240" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">к утру</text><text x="960" y="240" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">уведомление</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="390" font-size="38" font-weight="600" fill="#0a1524">Продавец чехлов</text><text x="170" y="470" font-size="32" fill="#566174">на шаг дешевле</text><rect x="170" y="540" width="70" height="70" rx="12" fill="#dfe8f7" /><rect x="260" y="540" width="70" height="70" rx="12" fill="#12397a" /><rect x="350" y="540" width="70" height="70" rx="12" fill="#dde2ea" /><rect x="440" y="540" width="70" height="70" rx="12" fill="#b9c3d2" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>На маркетплейсах покупатель видит рядом десятки одинаковых товаров и часто выбирает по цене. Конкуренты меняют цены по несколько раз в день, и продавец, который правит цены вручную раз в неделю, то теряет продажи, то продаёт дешевле, чем мог бы.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>На маркетплейсах покупатель видит рядом десятки одинаковых товаров и часто выбирает по цене. Конкуренты меняют цены по несколько раз в день, и продавец, который правит цены вручную раз в неделю, то теряет продажи, то продаёт дешевле, чем мог бы.</p>
     <p>Следить за ценами сотен карточек на двух площадках вручную невозможно. Таблицы устаревают к обеду, а снижение цены «на глаз» легко уводит товар ниже себестоимости, особенно с учётом комиссии площадки и логистики.</p>
     <p>Сервис берёт эту работу на себя. Вы подключаете кабинеты Wildberries и Ozon, и для каждой карточки выбираете, с кем сравнивать: конкретных продавцов или все предложения того же товара.</p>
     <p>Для каждой карточки задаётся правило: держать цену на шаг ниже самого дешёвого конкурента, держаться вровень с лидером продаж, оставаться в заданном диапазоне или не реагировать на демпинг. Правила можно назначать группам товаров, чтобы не настраивать сотни карточек по одной.</p>
@@ -108,31 +142,34 @@
     <p>Подключение занимает вечер: кабинеты площадок, минимальные цены и первые правила для ходовых товаров. Сервис работает в браузере и на телефоне.</p>
     <p>Сервис рассчитан на продавцов на Wildberries и Ozon. Сейчас он в подготовке: сначала мы проверяем, нужен ли он продавцам.</p>
     <p>Сервис меняет цены по вашим правилам; за цены, остатки и соблюдение правил площадок отвечает продавец. Сервис не связан с Wildberries и Ozon.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Может ли цена упасть ниже себестоимости?</h3>
-    <p>Нет. Для каждого товара задаётся минимальная цена, и ниже неё сервис цену не опустит.</p>
-    <h3>С какими площадками работает?</h3>
-    <p>С Wildberries и Ozon через кабинет продавца.</p>
-    <h3>Как часто проверяются конкуренты?</h3>
-    <p>По расписанию, которое вы выбираете; меняются только карточки, где это нужно по правилу.</p>
-    <h3>Сервис связан с площадками?</h3>
-    <p>Нет. Это отдельный сервис; цены меняются через ваш кабинет продавца.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он продавцам.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Может ли цена упасть ниже себестоимости?</h3><p>Нет. Для каждого товара задаётся минимальная цена, и ниже неё сервис цену не опустит.</p></div>
+      <div class="split flip"><h3>С какими площадками работает?</h3><p>С Wildberries и Ozon через кабинет продавца.</p></div>
+      <div class="split flip"><h3>Как часто проверяются конкуренты?</h3><p>По расписанию, которое вы выбираете; меняются только карточки, где это нужно по правилу.</p></div>
+      <div class="split flip"><h3>Сервис связан с площадками?</h3><p>Нет. Это отдельный сервис; цены меняются через ваш кабинет продавца.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он продавцам.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Подключите свой кабинет</h2>
-    <p><label>Сколько у вас карточек<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>До 50</option><option>50–200</option><option>200–1000</option><option>Больше 1000</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Подключите свой кабинет</h2>
+    </div>
+    <div class="tile stack">
+      <label>Сколько у вас карточек<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 50</option><option>50–200</option><option>200–1000</option><option>Больше 1000</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Цена в рынке</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Сервис меняет цены по вашим правилам. Не связан с Wildberries и Ozon; за цены и правила площадок отвечает продавец.</p>
+  <p>Сервис меняет цены по вашим правилам. Не связан с Wildberries и Ozon; за цены и правила площадок отвечает продавец.</p>
 </div></footer>
 
 </body>
